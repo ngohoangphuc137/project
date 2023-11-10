@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PAGE ADMIN</title>
+</head>
+
+<body>
+    <nav class="slidebar" id="slidebars">
+        <header>
+            <div class="image_text">
+                <span class="image">
+                    <img src="image/logo-removebg-preview.png" alt="">
+                </span>
+            </div>
+            <div onclick="change()" class="togeth bx bx-chevron-right" id="change">
+            </div>
+
+        </header>
+
+        <div class="menu_bar">
+            <div class="menu">
+                <ul class="menu_link">
+                    <li class="nav_link active" onclick="click_menu(1)">
+                        <a href="" onclick="click_menu(1)">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Thống kê</span>
+                        </a>
+                    </li>
+                    <li class="nav_link " onclick="click_menu(2)">
+                        <a href="" onclick="click_menu(2)">
+                            <i class='bx bx-purchase-tag'></i>
+                            <span>Danh mục hàng</span>
+                        </a>
+                    </li>
+                    <li class="nav_link" onclick="click_menu(3)">
+                        <a href="">
+                            <i class='bx bxs-food-menu'></i>
+                            <span>Sản phẩm</span>
+                        </a>
+                    </li>
+                    <li class="nav_link" onclick="click_menu(4)">
+                        <a href="">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Người dùng</span>
+                        </a>
+                    </li>
+                    <li class="nav_link" onclick="click_menu(5)">
+                        <a href="">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Quản lý bình luận</span>
+                        </a>
+                    </li>
+                    <li class="nav_link" onclick="click_menu(6)">
+                        <a href="">
+                            <i class="fa-brands fa-cc-amazon-pay"></i>
+                            <span>Quản lý đặt hàng</span>
+                        </a>
+                    </li>
+                    <li class="nav_link" id="log_out" onclick="click_menu(7)">
+                        <a href="">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+
+        <div class="title_home">
+            <div class="contain_title_home">
+                <div class="h_title_home">
+                    <h2>Trang thống kê</h2>
+                </div>
+                <div class="user_admin">
+                    <div class="text_admin">
+                        <p>xin chào phúc</p>
+                    </div>
+                    <div class="image_admin">
+                        <img src="image/3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contructer_more_color_prod">
+            <div class="more_color_prod hidden_color_prod">
+                <div class="moder_more_color_prod ">
+
+                    <div class="header_color_prod">
+                        <h2>Thêm màu sản phẩm</h2>
+                        <i class='bx bx-x'></i>
+                    </div>
+
+
+                    <form action="">
+                        <form class="body_color_prod">
+                            <div class="choose_size_and_color">
+                                <select name="" id="">
+                                    <option value="" selected>Chọn size</option>
+                                    <option value="">L</option>
+                                    <option value="">M</option>
+                                    <option value="">X</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="" selected>Chọn màu</option>
+                                    <option value="">Màu vàng</option>
+                                    <option value="">Màu Đỏ</option>
+                                    <option value="">Màu xanh</option>
+                                </select>
+                            </div>
+
+                            <div class="container_show_image">
+                                <input type="text" name="" class="check_drop_img" hidden>
+                                <div class="contructer">
+                                    <div class="shows_image">
+                                        <div class="header_show_image">
+                                            <p class="p_img">Kéo và thả để tải phai lên</p>
+                                        </div>
+                                        <span>Hoặc</span>
+                                        <div class="div_contain_input_choose_img">
+                                            Chọn File
+                                            <input class="input_img" type="file" onchange="check(this)">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="div_btn_color_prod">
+                                    <button type="submit" class="button_color_prod">Thêm</button>
+                                </div>
+                            </div>
+                        </form>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <form action="" class="form">
+            <div class="bag_big_page_manager">
+                <div class="code_prod">
+                    <p>Mã Sản phẩm:36</p>
+                    <span>Tên sản phẩm:Áo </span>
+                </div>
+
+                <div class="table_page_manager_statistical">
+
+                    <table class="table_manager_statistical">
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>ảnh</th>
+                                <th>màu</th>
+                                <th>ngày thêm</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>36</td>
+                                <td>áo</td>
+                                <td>20</td>
+                                <td>22-11-11</td>
+                                <td>
+                                    <div class="hanhdong">
+                                        <a href="" class="edit"><i class='bx bx-edit'></i></a>
+                                        <a href="" class="remove"><i class='bx bx-trash'></i></a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="chose">
+                    <div class="flex_chose">
+                        <div id="more_prod_img">
+                            <p class="more_prod_img">Thêm sản phẩm</p>
+                            
+                        </div>
+                        <a href="">
+                            <div class="more">
+                                <p>Danh mục</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js_admin/admin.js"></script>
+<script src="js_admin/jquery.js"></script>
+<script src="js_admin/scrip_more_prod.js"></script>
+
+</html>
