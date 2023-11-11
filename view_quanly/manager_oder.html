@@ -91,94 +91,41 @@
                 </div>
             </div>
         </div>
-        <div class="contructer_more_color_prod">
-            <div class="more_color_prod hidden_color_prod">
-                <div class="moder_more_color_prod ">
-
-                    <div class="header_color_prod">
-                        <h2>Thêm màu sản phẩm</h2>
-                        <i class='bx bx-x'></i>
-                    </div>
-
-
-                    <form action="">
-                        <form class="body_color_prod">
-                            <div class="choose_size_and_color">
-                                <select name="" id="">
-                                    <option value="" selected>Chọn size</option>
-                                    <option value="">L</option>
-                                    <option value="">M</option>
-                                    <option value="">X</option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="" selected>Chọn màu</option>
-                                    <option value="">Màu vàng</option>
-                                    <option value="">Màu Đỏ</option>
-                                    <option value="">Màu xanh</option>
-                                </select>
-                            </div>
-
-                            <div class="container_show_image">
-                                <input type="text" name="" class="check_drop_img" hidden>
-                                <div class="contructer">
-                                    <div class="shows_image">
-                                        <div class="header_show_image">
-                                            <p class="p_img">Kéo và thả để tải phai lên</p>
-                                        </div>
-                                        <span>Hoặc</span>
-                                        <div class="div_contain_input_choose_img">
-                                            Chọn File
-                                            <input class="input_img" type="file" onchange="check(this)">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="div_btn_color_prod">
-                                    <button type="submit" class="button_color_prod">Thêm</button>
-                                </div>
-                            </div>
-                        </form>
-
-                </div>
-
-            </div>
-        </div>
-        </div>
 
         <form action="" class="form">
-            <div class="bag_big_page_manager">
-                <div class="code_prod">
-                    <p>Mã Sản phẩm:36</p>
-                    <span>Tên sản phẩm:Áo </span>
-                </div>
+            <div class="delete_choose_oder">
+                
+                <button>
+                    <i class='bx bx-trash'></i>
+                    Xóa các mục đã chọn
+                </button>
+            </div>
 
+            <div class="bag_big_page_manager">
                 <div class="table_page_manager_statistical">
 
                     <table class="table_manager_statistical">
                         <thead>
                             <tr>
-                                <th>Tên sản phẩm</th>
-                                <th>ảnh</th>
-                                <th>màu</th>
-                                <th>ngày thêm</th>
                                 <th></th>
+                                <th>Mã</th>
+                                <th>Khách hàng</th>
+                                <th>Trạng thái</th>
+                                <th>Thanh toán</th>
+                                <th>Ngày tạo</th>
+                                <th>Tổng tiền</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>36</td>
+                                <td><input type="checkbox" name="" id="2"></td>
+                                <td><a class="code_order" href="">#29279</a></td>
                                 <td>áo</td>
                                 <td>20</td>
                                 <td>22-11-11</td>
-                                <td>
-                                    <div class="hanhdong">
-                                        <a href="" class="edit"><i class='bx bx-edit'></i></a>
-                                        <a href="" class="remove"><i class='bx bx-trash'></i></a>
-                                    </div>
-
-                                </td>
+                                <td>11</td>
+                                <td>1.000.000đ</td>
                             </tr>
                         </tbody>
 
@@ -186,15 +133,15 @@
                 </div>
                 <div class="chose">
                     <div class="flex_chose">
-                        <div id="more_prod_img">
-                            <p class="more_prod_img">Thêm sản phẩm</p>
-                            
+                        <div class="choose_all" onclick="check_all()" id="choose_all">
+                            <p>Chọn tất cả</p>
                         </div>
-                        <a href="">
-                            <div class="more">
-                                <p>Danh mục</p>
-                            </div>
-                        </a>    
+                        <div class="unchecker" onclick="deselect_all()" id="unchecker">
+                            <p>bỏ chọn</p>
+                        </div>
+                        <div class="remove_choose">
+                            <p>Xóa mục chọn</p>
+                        </div>
                     </div>
 
                 </div>
@@ -207,6 +154,5 @@
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="js_admin/admin.js"></script>
 <script src="js_admin/jquery.js"></script>
-<script src="js_admin/scrip_more_prod.js"></script>
 
 </html>

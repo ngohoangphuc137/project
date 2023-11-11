@@ -684,6 +684,7 @@ select,
     box-shadow: rgb(198, 198, 198) 0px 7px 29px 0px;
     animation: blocksize 0.2s ease;
 }
+
 @keyframes blocksize {
     from {
         top: -300px;
@@ -751,24 +752,28 @@ select,
 }
 
 /*thêm màu sản phẩm*/
-.code_prod{
+.code_prod {
     margin: 10px 5px;
     font-size: 18px;
 }
-.code_prod p{
+
+.code_prod p {
     margin-bottom: 10px;
 }
-.header_color_prod{
+
+.header_color_prod {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
     padding: 10px;
 }
-.header_color_prod i{
- font-size: 25px;
+
+.header_color_prod i {
+    font-size: 25px;
 }
-.more_color_prod{
+
+.more_color_prod {
     position: fixed;
     top: 0;
     left: 0px;
@@ -778,16 +783,19 @@ select,
     background: none;
     /* box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
 }
-@keyframes page{
-    from{
-        transform:scale(0,0) ;
+
+@keyframes page {
+    from {
+        transform: scale(0, 0);
     }
-    to{
+
+    to {
         /* transform:scale(2,2); */
-        transform:scale(1,1) ;
+        transform: scale(1, 1);
     }
 }
-.moder_more_color_prod{
+
+.moder_more_color_prod {
     position: relative;
     width: 35%;
     background-color: #ffffff;
@@ -795,16 +803,19 @@ select,
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 11px 26px 2px;
 }
-.container_show_image{
+
+.container_show_image {
     width: 100%;
     padding: 0px 10px;
-    
+
 }
-.contructer{
+
+.contructer {
     width: auto;
     margin: 0px auto;
 }
-.shows_image{
+
+.shows_image {
     width: 100%;
     border: 1px dashed black;
     border-radius: 7px;
@@ -814,28 +825,33 @@ select,
     flex-direction: column;
     padding: 5px 5px;
 }
+
 .shows_image .header_show_image p,
-.shows_image span{
+.shows_image span {
     padding: 15px 0px;
 }
-.div_btn_color_prod{
+
+.div_btn_color_prod {
     display: flex;
     justify-content: end;
 }
-.container_show_image .button_color_prod{
+
+.container_show_image .button_color_prod {
     padding: 13px 30px;
     margin: 10px;
     border-radius: 3px;
 }
-.div_contain_input_choose_img{
-position: relative;
-padding: 10px;
-background-color: #d6d6d6;
-opacity: 1;
-margin: 10px;
-border-radius: 5px;
+
+.div_contain_input_choose_img {
+    position: relative;
+    padding: 10px;
+    background-color: #d6d6d6;
+    opacity: 1;
+    margin: 10px;
+    border-radius: 5px;
 }
-.input_img{
+
+.input_img {
     position: absolute;
     top: 0;
     left: 0px;
@@ -843,10 +859,12 @@ border-radius: 5px;
     padding: 7px;
     opacity: 0;
 }
-.hidden_color_prod{
+
+.hidden_color_prod {
     display: none;
 }
-#more_prod_img .more_prod_img{
+
+#more_prod_img .more_prod_img {
     padding: 15.5px;
     background-color: white;
     border-radius: 7px;
@@ -856,12 +874,14 @@ border-radius: 5px;
     margin-right: 6px;
     cursor: grab;
 }
+
 /*css phần trang quản lý bình luận*/
-.hanhdong a{
+.hanhdong a {
     font-size: 20px;
     text-decoration: none;
 }
-.menu_page_manager_coment{
+
+.menu_page_manager_coment {
     width: 130px;
     height: 50px;
     background-color: white;
@@ -869,4 +889,234 @@ border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*quản lý đơn hàng */
+.delete_choose_oder {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+.delete_choose_oder button {
+    padding: 7px;
+    background-color: rgb(255, 75, 75);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.delete_choose_oder i {
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.code_order {
+    text-decoration: none;
+}
+
+/*chi tiết đơn hàng */
+.order_details_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.information_order,
+.pay_product,
+.delivery {
+    width: 387px;
+    height: auto;
+    border: 1px solid rgb(177, 177, 177);
+    box-shadow: -1px 4px 6px 0px rgb(144, 144, 144);
+    background-color: white;
+}
+
+.title_information_order,
+.title_pay_prod,
+.title_delivery {
+    display: flex;
+    border-bottom: 2px solid rgb(141, 141, 141);
+    margin: 6px;
+    font-weight: 540;
+    padding: 4px;
+    padding: 10px 0px ;
+}
+
+.title_information_order i,
+.title_pay_prod i,
+.title_delivery i{
+    color: rgb(48, 37, 255);
+    padding-right: 5px;
+}
+
+.body_information_order {
+    margin: 6px;
+}
+
+.body_information_order_1,
+.body_information_order_2,
+.body_information_order_3,
+.body_pay_prod1,
+.body_pay_prod2,
+.body_delivery1,
+.body_delivery2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px;
+    margin-top: 3px;
+    padding: 3.5px 0px;
+}
+.body_information_order_1 span,
+.body_information_order_2 span,
+.body_delivery1 span {
+    font-weight: 600;
+}
+.out_order_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+.out_order_details a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d0d0d0;
+    width: 90px;
+    color: #000000  ;
+}
+.out_order_details a i{
+ padding-right: 3px;
+}
+.order_managenment_code p{
+    font-size: 18px;
+}
+.order_managenment_code span{
+    font-size: 15px;
+}
+
+
+.main_order_details{
+ margin-top: 15px;
+}
+.main_manager_order{
+    width: 70%;
+    height: auto;
+    background-color: #ffffff;
+}
+.title_main_order_details{
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid  rgb(184, 184, 184);
+    margin: 20px 10px;
+    padding: 16px 0px;
+}
+.title_main_order_details i{
+   padding-right: 5px;
+   font-size: 18px;
+   color: rgb(48, 37, 255);
+}
+.table_main_manager_order{
+    margin: 0px 10px;
+}
+.table_main_manager_order table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table_main_manager_order table,
+.table_main_manager_order th,
+.table_main_manager_order td{
+ padding: 1rem;
+ border-bottom: 1px solid rgb(184, 184, 184);
+}
+.table_main_manager_order td img{
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+.table_mmo thead tr{
+    text-align: left;
+}
+.Payment_confirmation{
+    margin: 20px;
+}
+.money_to_pay{
+    display: flex;
+    justify-content: end;
+}
+.confirmmation_money_pay{
+    width: 60%;
+}
+.total_money_pay,
+.transport_fee,
+.discount,
+.Total_order_value,
+.btn_confirm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.Total_order_value span{
+    color: red;
+    font-weight: 550;
+}
+.btn_confirm button{
+    padding: 10px;
+    background-color: rgb(28, 28, 250);
+    color: white;
+}
+.main_order_details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Related_information{
+    width: 28%;
+}
+.title_delivery_address,
+.title_informmation_user{
+    display: flex;
+    margin: 0 10px;
+    padding: 10px 0px;
+    border-bottom: 2.3px solid rgb(157, 157, 157);
+}
+.title_delivery_address i,
+.title_informmation_user i{
+padding-right: 5px;
+color: rgb(28, 28, 250);
+}
+.delivery_address,
+.informmation_user{
+    background-color: white;
+}
+.body_delivery_address{
+    margin: 0px 10px;
+    padding: 15px 0px;
+    table-layout:fixed;
+}
+.informmation_user{
+    margin-top: 10px;
+}
+.body_informmation_user{
+    display: flex;
+    padding: 10px;  
+    align-items: end;
+}
+.body_informmation_user p{
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+.body_informmation_user img{
+    width: 70px;
+    height: auto;
 }
